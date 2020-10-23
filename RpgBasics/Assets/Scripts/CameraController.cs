@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraController : MonoBehaviour {
     public Transform target;
@@ -12,7 +10,7 @@ public class CameraController : MonoBehaviour {
     public float moveSpeed = 200f;
 
     public float pitch = 2f;
-    private float currentZoom = 10f;
+    private float currentZoom = 5f;
     private float currentYaw = 0f;
 
     private void Update() {
