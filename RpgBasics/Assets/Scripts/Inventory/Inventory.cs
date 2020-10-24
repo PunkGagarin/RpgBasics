@@ -6,11 +6,11 @@ public class Inventory : MonoBehaviour {
 
     public List<Item> items = new List<Item>();
 
+    private static Inventory instance;
 
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
-    private static Inventory instance;
 
     public static Inventory GetInstance { get { return instance; } }
 
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour {
         if (instance == null) {
             instance = this;
         } else
-            Debug.Log("Inventory already have instance!!!");
+            Debug.Log("Inventory already has an instance!!!");
     }
 
     public bool Add(Item item) {

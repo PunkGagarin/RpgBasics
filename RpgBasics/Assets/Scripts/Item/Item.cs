@@ -10,5 +10,12 @@ public class Item : ScriptableObject {
     public Sprite icon = null;
     public bool isDefault = false;
 
+    public virtual void UseItem() {
+        //UseItem smth might happen
+        Debug.Log("Using " + name);
+    }
 
+    public void RemoveFromInventory() {
+        Inventory.GetInstance.Remove(this);
+    }
 }
