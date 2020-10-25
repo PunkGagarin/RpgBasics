@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3110ae4d0e3be3b42b835f342e9b3e16, type: 3}
-  m_Name: Helmet of Ice
+  m_Name: Pants
   m_EditorClassIdentifier: 
-  name: Helmet of Ice
-  icon: {fileID: 21300000, guid: 252ea4b9938d9ff41b06a776b315f62a, type: 3}
-  isDefault: 0
-  equipSlot: 0
-  armorModifier: 2
-  attackModifier: 1
+  icon: {fileID: 0}
+  isDefault: 1
+  equipSlot: 2
+  mesh: {fileID: 2706844530586075709, guid: d04368fc746df8547b786bdc4e060e65, type: 3}
+  coveredMeshRegions: 00000000
+  armorModifier: 0
+  attackModifier: 0
