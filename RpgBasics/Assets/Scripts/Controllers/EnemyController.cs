@@ -8,10 +8,12 @@ public class EnemyController : MonoBehaviour {
 
     Transform target;
     NavMeshAgent navMeshAgent;
+    CharacterCombat characterCombat;
 
     void Start() {
         target = PlayerManager.GetInstance.player.transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        characterCombat = GetComponent<CharacterCombat>();
     }
 
     void Update() {
@@ -21,7 +23,10 @@ public class EnemyController : MonoBehaviour {
         if (sqrLen <= lookRadius * lookRadius) {
             navMeshAgent.SetDestination(target.position);
             if (sqrLen <= navMeshAgent.stoppingDistance * navMeshAgent.stoppingDistance) {
-                //Attack the target
+                CharacterStats playerStats = target.GetComponent<CharacterStats>();
+                if (playerStats != null) {
+                    characterCombat.Attack(playerStats);
+                }
                 FaceTarget();
             }
         }

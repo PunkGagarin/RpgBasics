@@ -15,4 +15,10 @@ public class PlayerStats : CharacterStats {
             attack.AddModifier(oldItem.attackModifier);
         }
     }
+
+    public override void Die() {
+        base.Die();
+        //Kill the player
+        PlayerManager.GetInstance.KillPlayer();
+    }
 }

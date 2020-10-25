@@ -1,7 +1,22 @@
-﻿public class Enemy : Interactable {
+﻿using UnityEngine;
+
+[RequireComponent(typeof(CharacterStats))]
+public class Enemy : Interactable {
+
+    PlayerManager playerManager;
+    CharacterStats myStats;
+
+    private void Start() {
+        playerManager = PlayerManager.GetInstance;
+        myStats = GetComponent<CharacterStats>();
+    }
+
 
     public override void Interract() {
         base.Interract();
-        //Attack the enemy
+        CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
+        if(playerCombat != null) {
+            playerCombat.Attack(myStats);
+        }
     }
 }
