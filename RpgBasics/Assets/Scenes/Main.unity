@@ -5356,6 +5356,7 @@ GameObject:
   - component: {fileID: 1536159269}
   - component: {fileID: 1536159270}
   - component: {fileID: 1536159271}
+  - component: {fileID: 1536159272}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5471,6 +5472,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0474da22ba304ef45931c5c4583a00f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1536159272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536159264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8af7662e820054b9b36104c878dcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  attack:
+    baseValue: 5
+  armor:
+    baseValue: 0
 --- !u!1 &1556650362
 GameObject:
   m_ObjectHideFlags: 0
@@ -8127,6 +8145,22 @@ PrefabInstance:
     - target: {fileID: 5712706157189958118, guid: 72064d7773bb75f448117cb1501d731e, type: 3}
       propertyPath: m_Name
       value: PlayerGFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135957994846120421, guid: 72064d7773bb75f448117cb1501d731e, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135957994846120421, guid: 72064d7773bb75f448117cb1501d731e, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135957994846120421, guid: 72064d7773bb75f448117cb1501d731e, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135957994846120421, guid: 72064d7773bb75f448117cb1501d731e, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[2]
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72064d7773bb75f448117cb1501d731e, type: 3}

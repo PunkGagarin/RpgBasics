@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3110ae4d0e3be3b42b835f342e9b3e16, type: 3}
   m_Name: Platelegs
   m_EditorClassIdentifier: 
-  name: Platelegs
   icon: {fileID: 21300000, guid: 295a272c9bdff564c90720ab210c89d2, type: 3}
   isDefault: 0
   equipSlot: 2
   mesh: {fileID: 5399035278446278691, guid: d9d236b8bfa5e314bb22acbca46a4e2e, type: 3}
   coveredMeshRegions: 00000000
-  armorModifier: 3
+  armorModifier: 2
   attackModifier: 0

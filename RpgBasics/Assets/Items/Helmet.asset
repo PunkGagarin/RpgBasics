@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3110ae4d0e3be3b42b835f342e9b3e16, type: 3}
   m_Name: Helmet
   m_EditorClassIdentifier: 
-  name: Helmet
   icon: {fileID: 21300000, guid: eba76f694b0162c45982f1422dcddc6f, type: 3}
   isDefault: 0
   equipSlot: 0
   mesh: {fileID: 6002320974324142164, guid: ea2cc7c5f8d73de478c937f117d12efd, type: 3}
-  armorModifier: 2
+  coveredMeshRegions: 
+  armorModifier: 1
   attackModifier: 1
