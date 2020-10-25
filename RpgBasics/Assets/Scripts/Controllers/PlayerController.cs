@@ -39,8 +39,6 @@ public class PlayerController : MonoBehaviour {
                 if (hit.collider.TryGetComponent(out Interactable interactable)) {
                     SetFocus(interactable);
                 }
-                //Check if interactable object
-                //Focus ont it if it is
             }
         }
     }
